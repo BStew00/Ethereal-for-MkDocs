@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    position: relative;
+    width: 100%;
+    background-color: #343233;
+}
+
+.header {
+    display: block;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #584b4f;
+    color: #efeae1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.main__inner {
+    display: flex;
+    height: 100%;
+    margin-top: 1.5rem;
+}
+
+.grid {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 61rem;
+}
+
+.sidebar {
+    position: sticky;
+    align-self: flex-start;
+    flex-shrink: 0;
+    padding: 1.2rem 0;
+    top: 2.4rem;
+    width: 12.1rem;
+}
+
+.sidebar__scrollwrap {
+    margin: 0 .2rem;
+    overflow-y: auto;
+    height: 2239px;
+}
+
+@supports selector(::-webkit-scrollbar) {
+    [dir=ltr] .sidebar__inner {
+        padding-right: calc(100% - 11.5rem);
+    }
+}
+
+.sidebar--secondary {
+    display: none;
+    order: 2;
+}
+
+.content {
+    flex-grow: 1;
+    min-width: 0;
+}
+
+.footer {
+    background-color: #2c2a2b;
+}
+
+
+
+
+
+/*
+    Temporary values for display and testing
+*/
+
+.header {
+    height:48px;
+    border: 2px dashed brown;
+}
+.container {
+    border: 2px dashed brown;
+}
+
+.main {
+    border: 2px dashed blue;
+}
+.footer {
+    height:48px;
+    border: 2px dashed blue;
+}
+
+.sidebar--secondary{
+    display: block;
+}
+.sidebar__scrollwrap{
+    border: 2px solid orange;
+}
+.content {
+    border: 2px solid yellow;
+}
