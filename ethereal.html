@@ -9,21 +9,49 @@
 </head>
 <body>
 
-  <header class="header">
+  <header class="header top-bar">
+    <div class="wrapper no-pad">
+      <ul class="navigation">
+        <li class="hamburger-icon"><a href="javascript:void(0)" onclick="toggleNav()"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></a></li>
+        <li><a href="">Link1</a></li>
+        <li><a href="">Link2</a></li>
+        <li><a href="">Link3</a></li>
+        <li><a style="font-size:1.5em;" href=""><i class="bi bi-linkedin"></i></a></li>
+        <li><a style="font-size:1.5em;" href=""><i class="bi bi-github"></i></a></li>
+        <li><a href="">Link6</a></li>
+      </ul>
+    </div>
   </header>
 
   <div class="container">
     <main class="main">
         <div class="main__inner grid">
-            <div class="sidebar sidebar--primary" style="top: 48px;">
+            <div class="sidebar sidebar--primary" id="sidebar--primary" style="top: 48px;">
                 <div class="sidebar__scrollwrap">
                     <div class="sidebar__inner">
+                      <a href="javascript:void(0)" class="closebtn" id="closebtn" onclick="toggleNav()" style="display:none;">&times;</a>
+                      <ul class="left-side-nav">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Apples</a></li>
+                        <li><a href="">Watermelons</a></li>
+                        <li><a href="">Raspberry Pi</a></li>
+                        <li><a href="">Bananas</a></li>
+                        <li><a href="">Oranges</a></li>
+                        <li><a href="">A big huge fruit cocktail</a></li>
+                        <li><a href="">Walnuts</a></li>
+                      </ul>
                     </div>
                 </div>
             </div>
             <div class="sidebar sidebar--secondary" style="top: 48px;">
                 <div class="sidebar__scrollwrap">
                     <div class="sidebar__inner">
+                      <ul class="left-side-nav">
+                        <li style="color:gray;padding-bottom:5px;">On this page</li>
+                        <li><a href="">Granny Smith</a></li>
+                        <li><a href="">Fuji</a></li>
+                        <li><a href="">How to Grow Apples</a></li>
+                      </ul>
                     </div>
                 </div>
             </div>
@@ -33,6 +61,20 @@
     <footer class="footer"></footer>
   </div>
 
-
+<script>
+function toggleDisplayNoneBlockById(id) {
+  var x = document.getElementById(id);
+  if (x.style.display === "none") {
+      x.style.display = "block";
+  } else {
+      x.style.display = "none";
+  }
+  return id;
+}
+function toggleNav() {
+  document.getElementById("sidebar--primary").classList.toggle("left-sidebar-show");
+  toggleDisplayNoneBlockById("closebtn");
+}
+</script>
 </body>
 </html>

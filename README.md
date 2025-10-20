@@ -1,4 +1,6 @@
-Derived from the excellent Material for MkDocs, except it's so tiny it's almost ethereal. It's extremely tiny without much of the Material functionality. Largely just the responsive HTML/CSS template.
+HTML/CSS template derived from the excellent Material for MkDocs, except it's so tiny it's almost ethereal. It's extremely tiny without almost any of Material's functionality. Largely just the responsive HTML/CSS template.  
+
+If you need to build a website, or even a single webpage without having to add all the functionality yourself, then check out Material for MkDocs. If you want to make a few lightweight webpages similar in responsiveness to Material, this might be a good starting point. 
 
 # Structure
 
@@ -102,8 +104,8 @@ Derived from the excellent Material for MkDocs, except it's so tiny it's almost 
   - box-sizing       = border-box
 
 - .sidebar .sidebar--secondary
- - same as .sidebar .sidebar--primary, except:
- - order = 2
+  - same as .sidebar .sidebar--primary, except:
+  - order = 2
 
 - .content
   - display      = block
