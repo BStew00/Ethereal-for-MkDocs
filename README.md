@@ -1,0 +1,1 @@
+Based off the excellent Material for MkDocs, except it's so tiny it's almost ethereal. It's extremely tiny withouth much of the Material functionality. Largely just the responsive HTML/CSS template.
