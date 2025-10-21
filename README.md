@@ -2,6 +2,18 @@ HTML/CSS template derived from the excellent Material for MkDocs, except it's so
 
 If you need to build a website, or even a single webpage without having to add all the functionality yourself, then check out Material for MkDocs. If you want to make a few lightweight webpages similar in responsiveness to Material, this might be a good starting point. 
 
+### Fullsize
+
+![screenshot](assets/Ethereal_screenshot.png)
+
+### Tablet
+
+![screenshot tablet](assets/Ethereal_screenshot_1.png)
+
+### Phone
+
+![screenshot phone](assets/Ethereal_screenshot_2.png)
+
 # Structure
 
 ## Outline
@@ -28,7 +40,7 @@ If you need to build a website, or even a single webpage without having to add a
   - display      = block
   - height       = 100%
   - box-sizing   = border-box
-  - ~~overflow-x   = hidden~~
+  - overflow-x   = hidden
 
 
 - body
