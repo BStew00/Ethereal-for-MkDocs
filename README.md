@@ -25,6 +25,8 @@ If you need to build a website, or even a single webpage without having to add a
 
 # Demo site
 
+See this [live demo](https://hylown.com/ethereal_demo/)
+
 Example of a live site using this package: [HyLown.com](https://hylown.com/)
 
 ## Responsive screenshots
